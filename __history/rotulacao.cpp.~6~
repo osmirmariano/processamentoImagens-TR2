@@ -1,0 +1,54 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+#include <jpeg.hpp>
+#include "rotulacao.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm1 *Form1;
+//---------------------------------------------------------------------------
+__fastcall TForm1::TForm1(TComponent* Owner)
+	: TForm(Owner)
+{
+    Form1->Color = clWhite;
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::SpeedButton1Click(TObject *Sender)
+{
+	Image1->Picture->LoadFromFile("cg.bmp"); // Carregando imagem
+	Image1->Stretch = true; //redimensiona
+	Image1->Refresh(); //atualiza
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::SpeedButton2Click(TObject *Sender)
+{
+	/*int x, y, R, G, B;
+
+	for (x = 0; x < Image1->Width; x++) {
+		for (y = 0; y < Image1->Height; y++) {
+			cor = Image1->Canvas->Pixels[x][y];
+			R = GetRValue(cor);  //Retorna Intensidade de cor vermelha
+			G = GetGValue(cor);  //Retorna Intensidade de cor Verde
+			B = GetBValue(cor);
+			if(R > 100 && R <= 255 && G > 100 && G <= 255 && B > 100 && B <= 255)
+			   Image1->Canvas->Pixels[x][y] = RGB(0,0,0);
+			else
+				Image1->Canvas->Pixels[x][y] = RGB(255,255,255);
+		}
+	} */
+
+	Image1 = new Image("novas.png");
+	int[,] dados = new int[img.Width, img.Height];
+	//0- branco 1-preto
+	for (int i = 0; i < img.Height; i++){
+		for (int j = 0; j < img.Width; j++) {
+			if (img.GetPixel(i, j) == Color.Black)
+				dados[i, j] = 1;
+			else
+				dados[i, j] = 0;
+		}
+	}
+}
+//---------------------------------------------------------------------------
