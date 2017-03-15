@@ -3,10 +3,10 @@
 	<Transactions>
     <Transaction>2017/03/05 18:13:52.000.143,=C:\Users\osmir\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
     <Transaction>2017/03/05 18:13:52.000.106,=C:\Users\osmir\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
-    <Transaction>2017/03/05 18:14:32.000.995,D:\GitHub\processamentoImagens-TR2\rotulacao.cpp=C:\Users\osmir\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
-    <Transaction>2017/03/05 18:14:32.000.995,D:\GitHub\processamentoImagens-TR2\rotulacao.h=C:\Users\osmir\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.h</Transaction>
-    <Transaction>2017/03/05 18:14:32.000.995,D:\GitHub\processamentoImagens-TR2\rotulacao.dfm=C:\Users\osmir\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2017/03/05 18:14:37.000.601,D:\GitHub\processamentoImagens-TR2\Project1PCH1.h=C:\Users\osmir\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
-    <Transaction>2017/03/05 18:14:40.000.272,D:\GitHub\processamentoImagens-TR2\Project1.cbproj=C:\Users\osmir\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>2017/03/05 18:14:32.000.995,C:\Users\osmir\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm=D:\GitHub\processamentoImagens-TR2\rotulacao.dfm</Transaction>
+    <Transaction>2017/03/05 18:14:32.000.995,C:\Users\osmir\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.h=D:\GitHub\processamentoImagens-TR2\rotulacao.h</Transaction>
+    <Transaction>2017/03/05 18:14:32.000.995,C:\Users\osmir\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.cpp=D:\GitHub\processamentoImagens-TR2\rotulacao.cpp</Transaction>
+    <Transaction>2017/03/05 18:14:37.000.601,C:\Users\osmir\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1PCH1.h=D:\GitHub\processamentoImagens-TR2\Project1PCH1.h</Transaction>
+    <Transaction>2017/03/05 18:14:40.000.272,C:\Users\osmir\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.cbproj=D:\GitHub\processamentoImagens-TR2\Project1.cbproj</Transaction>
   </Transactions>
 </BorlandProject>

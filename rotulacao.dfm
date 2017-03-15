@@ -2,8 +2,8 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'Implementa'#231#227'o rotula'#231#227'o em Imagens'
-  ClientHeight = 385
-  ClientWidth = 722
+  ClientHeight = 417
+  ClientWidth = 807
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -16,11 +16,11 @@ object Form1: TForm1
   object Image1: TImage
     Left = 24
     Top = 8
-    Width = 545
-    Height = 369
+    Width = 402
+    Height = 402
   end
   object SpeedButton1: TSpeedButton
-    Left = 592
+    Left = 656
     Top = 128
     Width = 113
     Height = 41
@@ -91,8 +91,8 @@ object Form1: TForm1
     OnClick = SpeedButton1Click
   end
   object SpeedButton2: TSpeedButton
-    Left = 592
-    Top = 200
+    Left = 656
+    Top = 192
     Width = 113
     Height = 38
     Caption = 'Rotular'
