@@ -17,14 +17,14 @@ __fastcall TForm1::TForm1(TComponent* Owner)
 //---------------------------------------------------------------------------
 void __fastcall TForm1::SpeedButton1Click(TObject *Sender)
 {
-	Image1->Picture->LoadFromFile("cg.bmp"); // Carregando imagem
+	Image1->Picture->LoadFromFile("os.bmp"); // Carregando imagem
 	Image1->Stretch = true; //redimensiona
 	Image1->Refresh(); //atualiza
 }
 //---------------------------------------------------------------------------
 void __fastcall TForm1::SpeedButton2Click(TObject *Sender)
 {
-	int x, y, R, G, B;
+	int x, y, R, G, B, label = 1;
 	for (x = 0; x < Image1->Width; x++) {
 		for (y = 0; y < Image1->Height; y++) {
 			cor = Image1->Canvas->Pixels[x][y];
@@ -40,13 +40,23 @@ void __fastcall TForm1::SpeedButton2Click(TObject *Sender)
 
 	for(x = 0; x < Image1->Width; x++){
 		for(y = 0; y < Image1->Height; y++){
-			if(Image1->Canvas->Pixels[x][y] == RGB(255,255,255){
+			if(Image1->Canvas->Pixels[x][y] == RGB(255,255,255)){
 				if(Image1->Canvas->Pixels[x-1][y] == RGB(0,0,0) && Image1->Canvas->Pixels[x][y-1] == RGB(0,0,0)){
-					 //Recebe um novo label
+					 //Image1->Canvas->Pixels[x][y] = label;
 				}
 				else{
+				   if(Image1->Canvas->Pixels[x-1][y] == RGB(255,255,255) || Image1->Canvas->Pixels[x][y-1] == RGB(255,255,255)){
+						//Image1->Canvas->Pixels[x][y] = label;
+				   }
+				   else{
+					   if(Image1->Canvas->Pixels[x-1][y] == RGB(255,255,255) || Image1->Canvas->Pixels[x][y-1] == RGB(255,255,255) /* && Fazer tratamento de verificar se as labels são iguais*/) {
 
-                }
+					   }
+					   else{
+                           //Fazer o último caso de teste
+                       }
+				   }
+				}
 			}
 		}
 	}
