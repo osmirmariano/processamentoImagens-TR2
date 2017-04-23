@@ -12,7 +12,7 @@ TForm1 *Form1;
 __fastcall TForm1::TForm1(TComponent* Owner)
 	: TForm(Owner)
 {
-    Form1->Color = clWhite;
+    Form1->Color = clWhite;//
 }
 //---------------------------------------------------------------------------
 void __fastcall TForm1::SpeedButton1Click(TObject *Sender)
@@ -68,12 +68,12 @@ void __fastcall TForm1::SpeedButton2Click(TObject *Sender)
 					}
 					else{
 
-						if(Image1->Canvas->Pixels[x-1][y] == RGB(0,0,0) && Image1->Canvas->Pixels[x][y-1] == RGB(0,0,0) /* && Fazer tratamento de verificar se as labels s„o iguais*/) {
+						if(Image1->Canvas->Pixels[x-1][y] == RGB(0,0,0) && Image1->Canvas->Pixels[x][y-1] == RGB(0,0,0) /* && Fazer tratamento de verificar se as labels s√£o iguais*/) {
 							if( label[x-1][y] == label[x][y-1] )
 								label[x][y] = label[x-1][y];		// rotulo de qualquer um
 							else {
 								label[x][y] = label[x-1][y];		// necessario declarar equivalencia
-								// label[x-1][y] È igual ao label[x][y-1]
+								// label[x-1][y] √© igual ao label[x][y-1]
 							}
 					}
 				   }
